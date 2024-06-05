@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClicMedical</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>ClinicMedical</h1>
+  </header>
+  
+  <main>
+    <section id="login-section" class="form-section">
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Senha" required>
+        <button type="submit">Login</button>
+        <a href="#" id="forgot-password">Esqueceu a senha?</a>
+        <p>Ainda não possui uma conta? <a href="#" id="register-link">Cadastre-se aqui</a>.</p>
+      </form>
+    </section>
+     <!-- Parte cadastravel dos medicos -->
+    <section id="register-section" class="form-section" style="display: none;">
+      <h2>Cadastro de Médico</h2>
+      <form id="register-form">
+        <input type="text" placeholder="Nome Completo" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Senha" required>
+        <input type="date" placeholder="Data de Nascimento" required>
+
+        <select required>
+          <option value="" disabled selected>Selecione o Sexo</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outro">Outro</option>
+          <!-- localização dos medicos -->
+        </select>
+        <input type="text" placeholder="Endereço" required>
+        <input type="text" placeholder="Cidade" required>
+        <input type="text" placeholder="Estado" required>
+        <input type="text" placeholder="CEP" required>
+       <!-- função dos medicos -->
+        <select required>
+          <option value="" disabled selected>Selecione a Especialidade</option>
+          <option value="alergologia">Alergologia</option>
+          <option value="anestesiologia">Anestesiologia</option>
+          <option value="angiologia">Angiologia</option>
+          <option value="cardiologia">Cardiologia</option>
+          <option value="cirurgia_cabeça_pescoço">Cirurgia de Cabeça e Pescoço</option>
+          <option value="cirurgia_cardiovascular">Cirurgia Cardiovascular</option>
+          <option value="cirurgia_geral">Cirurgia Geral</option>
+          <option value="cirurgia_oncológica">Cirurgia Oncológica</option>
+          <option value="cirurgia_pediátrica">Cirurgia Pediátrica</option>
+          <option value="cirurgia_plástica">Cirurgia Plástica</option>
+          <option value="cirurgia_torácica">Cirurgia Torácica</option>
+          <option value="cirurgia_vascular">Cirurgia Vascular</option>
+          <option value="clínica_médica">Clínica Médica</option>
+          <option value="dermatologia">Dermatologia</option>
+          <option value="endocrinologia">Endocrinologia</option>
+          <option value="gastroenterologia">Gastroenterologia</option>
+          <option value="geriatria">Geriatria</option>
+          <option value="ginecologia_obstetrícia">Ginecologia e Obstetrícia</option>
+          <option value="hematologia">Hematologia</option>
+          <option value="hepatologia">Hepatologia</option>
+          <option value="infectologia">Infectologia</option>
+          <option value="nefrologia">Nefrologia</option>
+          <option value="neurologia">Neurologia</option>
+          <option value="nutrologia">Nutrologia</option>
+          <option value="oftalmologia">Oftalmologia</option>
+          <option value="oncologia">Oncologia</option>
+          <option value="ortopedia">Ortopedia</option>
+          <option value="otorrinolaringologia">Otorrinolaringologia</option>
+          <option value="pediatria">Pediatria</option>
+          <option value="pneumologia">Pneumologia</option>
+          <option value="psiquiatria">Psiquiatria</option>
+          <option value="radiologia">Radiologia</option>
+          <option value="reumatologia">Reumatologia</option>
+          <option value="urologia">Urologia</option>
+        </select>
+        <!-- botão de cadastro  -->
+        <div class="button-container">
+          <button id="back-button" type="button">Voltar</button>
+          <button id="next-button" type="button">Avançar</button>
+          <button type="submit">Cadastrar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+  </footer>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
